@@ -1,0 +1,78 @@
+AI代码认证体系-开源项目/
+├── README.md                    # 项目简介（中英双语）
+├── MVP技术方案.md              # MVP技术架构
+├── LICENSE                     # MIT许可证
+├── setup.py                    # Python包安装
+├── pyproject.toml              # 项目配置
+├── src/
+│   ├── ai_audit/              # 核心模块
+│   │   ├── __init__.py
+│   │   ├── cli.py            # 命令行接口
+│   │   ├── auditor.py        # 审计引擎
+│   │   ├── rules/            # 规则库
+│   │   │   ├── __init__.py
+│   │   │   ├── hallucination.py
+│   │   │   ├── data_pollution.py
+│   │   │   └── standard_mapping.py
+│   │   ├── parsers/          # 语言解析器
+│   │   │   ├── __init__.py
+│   │   │   ├── python_parser.py
+│   │   │   ├── js_parser.py
+│   │   │   ├── java_parser.py
+│   │   │   └── cpp_parser.py
+│   │   ├── reporters/        # 报告生成器
+│   │   │   ├── __init__.py
+│   │   │   ├── html_reporter.py
+│   │   │   ├── md_reporter.py
+│   │   │   └── sbom_reporter.py
+│   │   └── utils/            # 工具函数
+│   │       ├── __init__.py
+│   │       ├── ast_helper.py
+│   │       ├── llm_tracker.py
+│   │       └── standard_mapper.py
+│   └── dashboard/            # Dashboard模块
+│       ├── backend/          # FastAPI后端
+│       │   ├── __init__.py
+│       │   ├── app.py
+│       │   ├── api/
+│       │   │   ├── __init__.py
+│       │   │   ├── audit.py
+│       │   │   └── report.py
+│       │   └── models/
+│       │       └── __init__.py
+│       └── frontend/         # React/Vite前端
+│           ├── src/
+│           │   ├── components/
+│           │   ├── pages/
+│           │   └── App.tsx
+│           └── package.json
+├── scripts/                   # 脚本工具
+│   ├── install.sh            # Linux/macOS安装
+│   ├── install.ps1           # Windows安装
+│   └── deploy.sh             # 部署脚本
+├── templates/                 # CI/CD模板
+│   ├── github-actions.yml    # GitHub Actions
+│   ├── gitlab-ci.yml         # GitLab CI
+│   ├── jenkinsfile           # Jenkins
+│   └── azure-pipelines.yml   # Azure Pipelines
+├── docs/                      # 文档
+│   ├── 双语对照表.md         # GB/T ↔ SLSA ↔ EU AI Act
+│   ├── architecture.md       # 架构文档
+│   ├── api.md               # API文档
+│   └── contribution.md      # 贡献指南
+├── examples/                  # 示例项目
+│   ├── 样例流水线.md        # 示例流水线
+│   ├── python-example/      # Python示例
+│   ├── javascript-example/  # JavaScript示例
+│   └── multi-language/      # 多语言示例
+├── tests/                     # 测试
+│   ├── test_auditor.py
+│   ├── test_parsers.py
+│   └── test_reporters.py
+├── .github/                   # GitHub配置
+│   ├── workflows/           # Actions工作流
+│   ├── ISSUE_TEMPLATE/      # Issue模板
+│   └── PULL_REQUEST_TEMPLATE.md
+├── .gitignore
+├── CHANGELOG.md              # 变更日志
+└── requirements.txt          # 依赖列表

@@ -1,0 +1,41 @@
+{
+  "项目名称": "AI代码认证体系",
+  "版本": "v0.1.0 (MVP)",
+  "技术栈": {
+    "后端": "Python 3.11+, FastAPI, Uvicorn",
+    "前端": "React, Vite, TypeScript, TailwindCSS",
+    "数据库": "SQLite (开发), PostgreSQL (生产)",
+    "缓存": "Redis",
+    "消息队列": "RabbitMQ (可选)",
+    "存储": "MinIO (SBOM文件)",
+    "监控": "Prometheus + Grafana"
+  },
+  "核心依赖": {
+    "tree-sitter": "多语言AST解析",
+    "langchain": "LLM调用追踪",
+    "spdx-tools": "SBOM生成",
+    "sigstore": "数字签名",
+    "pyyaml": "配置文件",
+    "click": "CLI框架",
+    "pytest": "测试框架",
+    "docker": "容器化"
+  },
+  "性能指标": {
+    "扫描速度": "10万行代码 < 5分钟",
+    "并发能力": "支持100个并发扫描",
+    "内存占用": "< 1GB (单扫描)",
+    "存储空间": "10万行项目 < 50MB"
+  },
+  "安全指标": {
+    "代码签名": "100%支持",
+    "依赖验证": "100%覆盖",
+    "漏洞扫描": "OWASP Top 10覆盖",
+    "日志审计": "完整操作日志"
+  },
+  "国际化": {
+    "支持语言": "中文, 英文",
+    "文档格式": "Markdown, HTML, PDF",
+    "编码标准": "UTF-8",
+    "时区处理": "UTC + 本地时间"
+  }
+}

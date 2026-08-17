@@ -1,0 +1,17 @@
+stages:
+  - audit
+
+ai-code-audit:
+  stage: audit
+  image: python:3.11
+  before_script:
+    - pip install ai-audit
+  script:
+    - ai-audit scan --lang python --rules hallucination,data-pollution --output report.html
+  artifacts:
+    paths:
+      - report.html
+    expire_in: 1 week
+  only:
+    - branches
+    - merge_requests

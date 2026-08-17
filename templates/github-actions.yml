@@ -1,0 +1,41 @@
+name: AI Code Audit
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Install AI Audit Tool
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/ai-code-audit/ai-audit/main/install.sh | bash
+      
+      - name: Run Audit
+        run: |
+          ai-audit scan --lang python --rules hallucination,data-pollution --output report.html
+      
+      - name: Upload Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: audit-report
+          path: report.html
+      
+      - name: Comment on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('report.html', 'utf8');
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `🤖 AI代码审计结果\n\n[查看完整报告](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`
+            });
