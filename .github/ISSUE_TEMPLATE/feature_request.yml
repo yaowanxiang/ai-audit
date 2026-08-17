@@ -1,0 +1,40 @@
+---
+name: 功能建议 / Feature Request
+about: 提出新功能建议 / Suggest new features
+title: '[FEATURE] '
+labels: enhancement
+---
+
+## 中文建议 / Chinese Suggestion
+
+你希望添加什么功能 / What feature would you like to add
+
+### 使用场景 / Use Case
+
+描述这个功能的使用场景 / Describe the use case for this feature
+
+### 提议方案 / Proposed Solution
+
+你建议如何实现这个功能 / How do you suggest implementing this feature
+
+### 替代方案 / Alternatives
+
+你考虑过哪些替代方案 / What alternatives have you considered
+
+---
+
+## English Suggestion
+
+What feature would you like to add
+
+### Use Case
+
+Describe the use case for this feature
+
+### Proposed Solution
+
+How do you suggest implementing this feature
+
+### Alternatives
+
+What alternatives have you considered

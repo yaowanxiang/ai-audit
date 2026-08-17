@@ -1,0 +1,42 @@
+{
+  "核心文档": {
+    "README.md": "✅ 中英双语项目简介",
+    "MVP技术方案.md": "✅ 完整技术架构",
+    "LICENSE": "✅ MIT许可证",
+    ".gitignore": "✅ Git忽略配置"
+  },
+  "体系研究": {
+    "research/国内外体系调研.json": "✅ 16个国内外体系",
+    "research/体系融合方案.md": "✅ 三层融合模型"
+  },
+  "文档": {
+    "docs/双语对照表.md": "✅ GB/T ↔ SLSA ↔ EU AI Act",
+    "docs/多语言配置.md": "✅ 7种语言支持",
+    "docs/CONTRIBUTING.md": "✅ 贡献指南",
+    "docs/API.md": "✅ API文档"
+  },
+  "示例": {
+    "examples/样例流水线.md": "✅ Python/多语言/CI示例"
+  },
+  "脚本": {
+    "scripts/install.sh": "✅ Linux/macOS安装",
+    "scripts/install.ps1": "✅ Windows安装",
+    "scripts/github-create.sh": "✅ GitHub仓库创建",
+    "scripts/github-create.ps1": "✅ GitHub仓库创建"
+  },
+  "CI/CD": {
+    "templates/github-actions.yml": "✅ GitHub Actions",
+    "templates/gitlab-ci.yml": "✅ GitLab CI"
+  },
+  "GitHub配置": {
+    ".github/ISSUE_TEMPLATE/bug_report.yml": "✅ Bug报告模板",
+    ".github/ISSUE_TEMPLATE/feature_request.yml": "✅ 功能建议模板",
+    ".github/pull_request_template.md": "✅ PR模板"
+  },
+  "计划": {
+    "三阶段发行计划.md": "✅ Phase 1/2/3",
+    "评估总表.csv": "✅ 8/10评分",
+    "机会清单.json": "✅ 4个切入点",
+    "技术规格.json": "✅ 性能/安全/国际化"
+  }
+}

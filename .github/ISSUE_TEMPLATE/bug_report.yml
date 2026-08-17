@@ -1,0 +1,66 @@
+---
+name: Bug 报告 / Bug Report
+about: 报告问题帮助我们改进 / Report bugs to help us improve
+title: '[BUG] '
+labels: bug
+---
+
+## 中文描述 / Chinese Description
+
+简要描述你遇到的问题 / Briefly describe the problem you encountered
+
+### 复现步骤 / Steps to Reproduce
+
+1. 运行命令 / Run command: `ai-audit ...`
+2. 配置文件 / Config file: 
+3. 代码文件 / Code files: 
+4. 其他步骤 / Other steps:
+
+### 预期行为 / Expected Behavior
+
+你期望发生什么 / What you expected to happen
+
+### 实际行为 / Actual Behavior
+
+实际发生了什么 / What actually happened
+
+### 环境信息 / Environment
+
+- OS: [e.g. Windows 11, macOS 14]
+- Python版本 / Python version: [e.g. 3.11]
+- AI代码审计版本 / AI Audit version: [e.g. v0.1.0]
+
+### 日志 / Logs
+
+相关日志输出 / Relevant log output
+
+---
+
+## English Description
+
+Briefly describe the bug
+
+### Steps to Reproduce
+
+1. Command: `ai-audit ...`
+2. Config file: 
+3. Code files: 
+4. Other steps:
+
+### Expected Behavior
+
+What you expected to happen
+
+### Actual Behavior
+
+What actually happened
+
+### Environment
+
+- OS: [e.g. Windows 11, macOS 14]
+- Python version: [e.g. 3.11]
+- AI Audit version: [e.g. v0.1.0]
+
+### Logs
+
+Relevant log output
