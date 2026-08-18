@@ -2,9 +2,9 @@
 # AI Code Audit Framework - MVP Technical Proposal
 
 ## 核心目标 / Core Objective
-构建中国人自有AI代码安全认证框架，覆盖幻觉审计、数据溯源、规范映射，通过GitHub开源争夺国际话语权。
+构建国际通用的AI代码安全认证框架，覆盖幻觉审计、数据溯源、规范映射，通过GitHub开源服务全球开发者。
 
-Build China's proprietary AI code security certification framework, covering hallucination auditing, data provenance, and standard mapping, aiming to gain international discourse through GitHub open source.
+Build an internationally applicable AI code security certification framework, covering hallucination auditing, data provenance, and standard mapping, serving developers worldwide through GitHub open source.
 
 ---
 

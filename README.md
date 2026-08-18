@@ -4,7 +4,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/yaowanxiang/ai-audit/pulls)
 
-A China-originated AI code security certification framework that audits AI hallucination, tracks data provenance, and maps compliance across international standards — GB/T, SLSA, and EU AI Act.
+An international AI code security certification framework that audits AI hallucination, tracks data provenance, and maps compliance across global standards — GB/T, SLSA, and EU AI Act.
 
 ## Why AI Audit?
 
@@ -89,4 +89,4 @@ ai-audit report --format html --lang en
 
 ---
 
-**AI代码认证体系** — China's open-source AI code audit framework, built for the global community. 中国开源，服务全球。
+**AI代码认证体系** — An open-source AI code audit framework, built by and for the global community.
