@@ -3,7 +3,7 @@
 
 # 设置环境变量
 REPO_NAME="ai-audit"
-REPO_DESC="中国人自有AI代码安全认证框架，覆盖幻觉审计、数据溯源、规范映射，支持7种语言，兼容GB/T、SLSA、EU AI Act三大国际规范"
+REPO_DESC="AI code security certification framework: hallucination audit, data provenance, standard mapping (GB/T, SLSA, EU AI Act), 7-language support"
 REPO_HOMEPAGE="https://ai-code-audit.org"
 
 echo "🔧 创建GitHub仓库: $REPO_NAME"
@@ -37,7 +37,7 @@ gh repo create $REPO_NAME \
 
 if [ $? -eq 0 ]; then
     echo "✅ 仓库创建成功！"
-    echo "🔗 仓库地址: https://github.com/ai-code-audit/$REPO_NAME"
+    echo "🔗 仓库地址: https://github.com/yaowanxiang/$REPO_NAME"
 else
     echo "❌ 仓库创建失败"
     exit 1
@@ -47,7 +47,7 @@ echo
 echo "🎉 完成！开始开发吧！"
 echo
 echo "📝 下一步："
-echo "1. 访问仓库: https://github.com/ai-code-audit/$REPO_NAME"
+echo "1. 访问仓库: https://github.com/yaowanxiang/$REPO_NAME"
 echo "2. 查看文档: README.md, MVP技术方案.md"
 echo "3. 贡献代码: docs/CONTRIBUTING.md"
 echo "4. API文档: docs/API.md"

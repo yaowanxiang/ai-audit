@@ -14,7 +14,7 @@ pip install langchain spdx-tools sigstore-clicertify
 pip install fastapi uvicorn
 
 # 克隆项目
-$repoUrl = "https://github.com/ai-code-audit/ai-audit.git"
+$repoUrl = "https://github.com/yaowanxiang/ai-audit.git"
 $installDir = "$env:USERPROFILE\.ai-audit"
 
 if (Test-Path $installDir) {

@@ -62,12 +62,12 @@
 
 ### Linux/macOS
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ai-code-audit/ai-audit/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/yaowanxiang/ai-audit/main/install.sh | bash
 ```
 
 ### Windows
 ```powershell
-powershell -ExecutionPolicy Bypass -Command "iwr https://raw.githubusercontent.com/ai-code-audit/ai-audit/main/install.ps1 | iex"
+powershell -ExecutionPolicy Bypass -Command "iwr https://raw.githubusercontent.com/yaowanxiang/ai-audit/main/install.ps1 | iex"
 ```
 
 ---

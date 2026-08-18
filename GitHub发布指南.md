@@ -56,7 +56,7 @@ cd "D:\AI核心产出文件（不得删除）\AI代码认证体系-开源项目"
 1. 访问: https://github.com/new
 2. 填写:
    - Repository name: `ai-audit`
-   - Description: `中国人自有AI代码安全认证框架，覆盖幻觉审计、数据溯源、规范映射，支持7种语言，兼容GB/T、SLSA、EU AI Act三大国际规范`
+   - Description: `AI code security certification framework: hallucination audit, data provenance, standard mapping (GB/T, SLSA, EU AI Act), 7-language support`
    - Public: ✅ 勾选
 3. 点击: **Create repository**
 
@@ -89,7 +89,7 @@ gh auth login
 
 # 创建仓库
 cd "D:\AI核心产出文件（不得删除）\AI代码认证体系-开源项目"
-gh repo create ai-audit --public --description "中国人自有AI代码安全认证框架，覆盖幻觉审计、数据溯源、规范映射，支持7种语言，兼容GB/T、SLSA、EU AI Act三大国际规范" --source=. --remote=origin --push
+gh repo create ai-audit --public --description "AI code security certification framework: hallucination audit, data provenance, standard mapping (GB/T, SLSA, EU AI Act), 7-language support" --source=. --remote=origin --push
 
 # 创建Release
 gh release create v0.1.0 --title "AI代码认证体系 v0.1.0" --notes-file RELEASE_NOTES.md

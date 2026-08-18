@@ -94,7 +94,7 @@ try {
 
     # 创建仓库
     Write-Host "📦 创建仓库..." -ForegroundColor Cyan
-    $repo = Create-GitHubRepo -Token $GitHubToken -Name "ai-audit" -Description "中国人自有AI代码安全认证框架，覆盖幻觉审计、数据溯源、规范映射，支持7种语言，兼容GB/T、SLSA、EU AI Act三大国际规范"
+    $repo = Create-GitHubRepo -Token $GitHubToken -Name "ai-audit" -Description "AI code security certification framework: hallucination audit, data provenance, standard mapping (GB/T, SLSA, EU AI Act), 7-language support"
     Write-Host "✅ 仓库创建成功: $($repo.html_url)" -ForegroundColor Green
 
     # 设置远程仓库

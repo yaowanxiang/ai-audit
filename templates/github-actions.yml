@@ -14,7 +14,7 @@ jobs:
       
       - name: Install AI Audit Tool
         run: |
-          curl -fsSL https://raw.githubusercontent.com/ai-code-audit/ai-audit/main/install.sh | bash
+          curl -fsSL https://raw.githubusercontent.com/yaowanxiang/ai-audit/main/install.sh | bash
       
       - name: Run Audit
         run: |
@@ -37,5 +37,5 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `🤖 AI代码审计结果\n\n[查看完整报告](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`
+              body: `🤖 AI Code Audit Results\n\n[View full report](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`
             });

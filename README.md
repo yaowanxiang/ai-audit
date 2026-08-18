@@ -1,81 +1,92 @@
-# AI代码认证体系 (AI Code Audit Framework)
+# AI Code Audit Framework (AI代码认证体系)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Stars](https://img.shields.io/github/stars/ai-code-audit/ai-audit.svg)](https://github.com/ai-code-audit/ai-audit)
 [![Python Version](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/yaowanxiang/ai-audit/pulls)
 
-## 📖 中文简介
+A China-originated AI code security certification framework that audits AI hallucination, tracks data provenance, and maps compliance across international standards — GB/T, SLSA, and EU AI Act.
 
-AI代码认证体系是中国人自有的AI代码安全认证框架，通过GitHub开源平台争夺国际话语权。该框架覆盖AI幻觉审计、数据溯源、规范映射，支持中英双语，兼容GB/T、SLSA、EU AI Act三大国际规范。
+## Why AI Audit?
 
-### 核心功能
+As AI-generated code becomes mainstream, verifying **what** an AI wrote, **where** the data came from, and **whether** it complies with regulations is critical. AI Audit provides:
 
-- **AI幻觉检测**：自动检测未经证实的引用、数据来源不明
-- **数据污染标记**：对外部AI调用标记来源/版本/置信度
-- **规范映射层**：GB/T ↔ SLSA ↔ EU AI Act双向转换
-- **双语支持**：中英文双语文档、报告、错误提示
-- **CI/CD集成**：支持GitHub Actions、GitLab CI等主流平台
+- 🔍 **Hallucination Detection** — flags unverified references and fabricated citations
+- 🏷️ **Data Contamination Marking** — tags external AI calls with source/version/confidence
+- 🔄 **Standard Mapping** — bidirectional conversion between GB/T ↔ SLSA ↔ EU AI Act
+- 🌍 **7-Language Support** — zh, en, ja, ko, fr, de, es
 
-### 快速开始
-
-```bash
-# 安装
-curl -fsSL https://raw.githubusercontent.com/ai-code-audit/ai-audit/main/install.sh | bash
-
-# 扫描
-ai-audit scan --lang python --rules hallucination,data-pollution
-
-# 生成报告
-ai-audit report --format html --lang zh,en
-```
-
-详细文档请查看 [MVP技术方案.md](./MVP技术方案.md)
-
----
-
-## 📖 English Introduction
-
-AI Code Audit Framework is China's proprietary AI code security certification framework, aiming to gain international discourse through GitHub open source. The framework covers AI hallucination auditing, data provenance, and standard mapping, supporting bilingual (Chinese/English) and compatible with GB/T, SLSA, and EU AI Act.
-
-### Core Features
-
-- **AI Hallucination Detection**: Automatically detect unverified references and unclear data sources
-- **Data Contamination Marking**: Tag external AI calls with source/version/confidence
-- **Standard Mapping Layer**: Bidirectional conversion between GB/T, SLSA, and EU AI Act
-- **Bilingual Support**: Chinese/English documentation, reports, and error messages
-- **CI/CD Integration**: Support for GitHub Actions, GitLab CI, and other mainstream platforms
-
-### Quick Start
+## Quick Start
 
 ```bash
 # Install
-curl -fsSL https://raw.githubusercontent.com/ai-code-audit/ai-audit/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/yaowanxiang/ai-audit/main/install.sh | bash
 
 # Scan
 ai-audit scan --lang python --rules hallucination,data-pollution
 
-# Generate Report
+# Generate report
 ai-audit report --format html --lang en
 ```
 
-For detailed documentation, see [MVP技术方案.md](./MVP技术方案.md)
+## Features
 
-## 📚 Documentation
+| Feature | Description |
+|---------|-------------|
+| AI Hallucination Detection | Detect unverified references and unclear data sources |
+| Data Contamination Marking | Tag external AI calls with source/version/confidence |
+| Standard Mapping Layer | Bidirectional conversion between GB/T, SLSA, and EU AI Act |
+| SBOM Generation | SPDX / CycloneDX output |
+| CI/CD Integration | GitHub Actions, GitLab CI templates included |
+| Bilingual Reports | Chinese/English report generation |
 
-- [MVP技术方案](./MVP技术方案.md) - MVP Technical Architecture
-- [双语对照表](./docs/双语对照表.md) - Bilingual Mapping Table
-- [样例流水线](./examples/样例流水线.md) - Example Pipelines
-- [安装脚本](./scripts/) - Installation Scripts
-- [CI/CD模板](./templates/) - CI/CD Templates
+## Architecture
 
-## 🤝 Contributing
+```
+┌─────────────────────────────────────┐
+│  Dashboard (Bilingual Reports)      │
+└─────────────────────────────────────┘
+           ↑
+┌─────────────────────────────────────┐
+│  Audit Engine                       │
+│  - Hallucination Detection          │
+│  - Data Contamination Marking       │
+│  - Standard Mapping (GB/T↔SLSA↔EU)  │
+└─────────────────────────────────────┘
+           ↑
+┌─────────────────────────────────────┐
+│  Collection Layer                   │
+│  - Tree-sitter (Py/JS/Java/C++)     │
+│  - LLM Call Interception            │
+└─────────────────────────────────────┘
+```
 
-We welcome contributions! Please read our contributing guidelines.
+## Documentation
 
-## 📄 License
+- [MVP Technical Proposal](./MVP技术方案.md) — architecture & design
+- [API Reference](./docs/API.md) — full API documentation
+- [Bilingual Mapping Table](./docs/双语对照表.md) — GB/T ↔ SLSA ↔ EU AI Act
+- [Multi-language Configuration](./docs/多语言配置.md) — 7 languages
+- [Contributing Guide](./docs/CONTRIBUTING.md) — how to contribute
+- [Example Pipelines](./examples/样例流水线.md) — usage examples
 
-MIT License - see LICENSE file for details.
+## Roadmap
 
-## 🌟 Star History
+| Phase | Scope | Timeline |
+|-------|-------|----------|
+| **v0.1.0** | Core engine, CLI, docs | ✅ Released 2026-08 |
+| **v0.2.0** | MCP server, Dashboard, 10+ pipeline templates | 2 months |
+| **v0.3.0** | PMC governance, international CI, 100+ case studies | 3 months |
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ai-code-audit/ai-audit&type=Date)](https://star-history.com/#ai-code-audit/ai-audit&Date)
+## Community
+
+- [GitHub Issues](https://github.com/yaowanxiang/ai-audit/issues) — bug reports & feature requests
+- [Discussions](https://github.com/yaowanxiang/ai-audit/discussions) — Q&A and ideas
+- [Email](mailto:yaowanxiang@qut.edu.cn) — direct contact
+
+## License
+
+[MIT License](./LICENSE)
+
+---
+
+**AI代码认证体系** — China's open-source AI code audit framework, built for the global community. 中国开源，服务全球。
